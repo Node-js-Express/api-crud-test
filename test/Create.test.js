@@ -66,7 +66,7 @@ test('이미 존재하는 포켓몬 ID를 사용한 경우 400 반환', async ()
     await postPokemon(req, res);
 
     expect(res.status).toHaveBeenCalledWith(400);
-    expect(res.json).toHaveBeenCalledWith({ error: '잡았던 포켓몬 입니다. 장원이의 신념을 지켜주세요.' });
+    expect(res.json).toHaveBeenCalledWith({ error: '잡았던 포켓몬 입니다.' });
 });
 
 test('유효하지 않은 성격을 가진 포켓몬을 추가한 경우 400 반환', async () => {
