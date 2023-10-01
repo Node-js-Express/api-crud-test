@@ -14,7 +14,7 @@ export const getPokemonToID = asyncWrapper(async(req, res, next) => {
   
 });
 
-export const getAlpa = asyncWrapper(async(req, res, next) => {
+export const getAlpha = asyncWrapper(async(req, res, next) => {
     
 });
 

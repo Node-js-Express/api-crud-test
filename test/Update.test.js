@@ -47,7 +47,7 @@ describe('Update 테스트', () => {
 
 test('이미 존재하는 ID로 업데이트 시 400 반환', async () => {
     const req = {
-        params: { id: 1 },  // 이미 존재하는 ID
+        params: { id: 1 },  
         body: {
             id: 2,  // 중복된 ID
             name: '이름 업데이트',

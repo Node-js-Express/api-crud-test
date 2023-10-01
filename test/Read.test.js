@@ -1,4 +1,4 @@
-import { getAllPokemons, getPokemonToID, getAlpa } from '../controllers/tasks.js'
+import { getAllPokemons, getPokemonToID, getAlpha } from '../controllers/tasks.js'
 import { generateRandomPokemonSet } from '../utils/testDataGenerater.js';
 import PokemonData from '../utils/PokemonData.js';
 
@@ -62,7 +62,7 @@ describe('Read 테스트', () => {
       json: jest.fn(),
     };
 
-    await getAlpa(req, res);
+    await getAlpha(req, res);
 
     const expectedNames = alphaDataSet.map(p => p.name);
 

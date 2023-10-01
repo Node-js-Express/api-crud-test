@@ -1,5 +1,5 @@
 import express from 'express'
-import { getAllPokemons, getPokemonToID, getAlpa, postPokemon, deletePokmons, updatePokemons } from '../controllers/tasks.js'
+import { getAllPokemons } from '../controllers/tasks.js'
 
 export const router = express.Router();
 
