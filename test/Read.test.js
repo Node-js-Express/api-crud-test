@@ -80,7 +80,7 @@ describe('Read 테스트', () => {
         json: jest.fn(),
     };
 
-    await getAlpa(req, res);
+    await getAlpha(req, res);
 
     expect(res.status).toHaveBeenCalledWith(404);
     expect(res.json).toHaveBeenCalledWith({ error: '알파가 없는 불쌍한 장원이...' });
