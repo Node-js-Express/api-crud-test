@@ -18,7 +18,7 @@ export const getAlpha = asyncWrapper(async(req, res, next) => {
     
 });
 
-export const deletePokmons = asyncWrapper(async(req, res, next) => {
+export const deletePokemons = asyncWrapper(async(req, res, next) => {
    
 });
 

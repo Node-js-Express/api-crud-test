@@ -1,4 +1,4 @@
-import { deletePokmons } from '../controllers/tasks.js'
+import { deletePokemons } from '../controllers/tasks.js'
 import { generateRandomPokemonSet } from '../utils/testDataGenerater.js';
 import PokemonData from '../utils/PokemonData.js';
 
@@ -20,7 +20,7 @@ describe('Delete 테스트', () => {
     };
 
     const deletedPokemonName = pokemonDataInstance.getPokemonData()[0].name
-    await deletePokmons(req, res);
+    await deletePokemons(req, res);
    
     expect(res.status).toHaveBeenCalledWith(201);
     expect(res.json).toHaveBeenCalledWith({ message: `굿바이 ${deletedPokemonName}!!` });
@@ -35,7 +35,7 @@ describe('Delete 테스트', () => {
         json: jest.fn(),
     };
 
-    await deletePokmons(req, res);
+    await deletePokemons(req, res);
 
     expect(res.status).toHaveBeenCalledWith(404);
     expect(res.json).toHaveBeenCalledWith({ error: '포켓몬을 찾을 수 없습니다.' });
